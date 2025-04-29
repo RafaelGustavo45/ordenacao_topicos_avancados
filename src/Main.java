@@ -85,12 +85,12 @@ public class Main {
             array[i]= r.nextInt();
         }
 
-        TimsortExample tim = new TimsortExample();
+        TimSort tim = new TimSort();
         long tempo_inicial8 = System.currentTimeMillis();
-        int[] ordenados = tim.timsort(array);
+        tim.timSort(array); // Ordenando um array int[]
         long tempo_final8 = System.currentTimeMillis();
         long tempo_total8 = (tempo_final8 - tempo_inicial8);
-        System.out.println("TimSort com " + cem_mil + " elementos tempo: " + tempo_total8 + " ms");
+        System.out.println("TimSort com " + cem_mil + " elementos (array int[]) tempo: " + tempo_total8 + " ms");
 
         System.out.println("----MergeSort----");
 
@@ -106,7 +106,7 @@ public class Main {
         m.sort(a, 0, a.length - 1);;
         long tempo_final9 = System.currentTimeMillis();
         long tempo_total9 = (tempo_final9 - tempo_inicial9);
-        System.out.println("TimSort com " + cem_mil + " elementos tempo: " + tempo_total9 + " ms");
+        System.out.println("MergeSort com " + cem_mil + " elementos tempo: " + tempo_total9 + " ms");
 
 
 
